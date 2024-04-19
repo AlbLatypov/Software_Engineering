@@ -10,9 +10,9 @@
 
 Презентации:
 
-* **Лекция 1**. [Введение в DevOps](IU-5/Lections/01_Lection)
+* **Лекция 1**. [Введение в DevOps](/IU-5/Lections/01_Lection/)
 
 
 Дополнительные ссылки:
 
-* [Думай как SRE (Михаил Кучеренко)](IU-5/Lections/01_Lection/Think_like_SRE.pdf)
+* [Думай как SRE (Михаил Кучеренко)](/IU-5/Lections/01_Lection/Think_like_SRE.pdf)
