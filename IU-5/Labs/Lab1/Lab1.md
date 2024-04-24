@@ -97,14 +97,14 @@ Owner:группа = ansible:wheel
 `route -n`  аналог ip r\
 
 Запомните свой IP и GW:
-`$ ip a | grep -v '127.0.0.1' | grep 'inet '`
+`$ ip a | grep -v '127.0.0.1' | grep 'inet '`\
 inet __10.0.0.5/24__ brd 10.0.0.255 scope global dynamic noprefixroute __eth0__
 
 `$ ip r`
 default via 10.0.0.1 dev eth0 proto dhcp metric 100 
 10.0.0.0/24 dev eth0 proto kernel scope link src 10.0.0.5 metric 100
 
-__IP - 10.0.0.5 --> 176.109.104.189__
+__IP - 10.0.0.5 --> 176.109.104.189__\
 __GW - via 10.0.0.1__
 
 ### Подключение по SSH
@@ -120,17 +120,17 @@ SSH (англ. Secure Shell — «безопасная оболочка») — �
 и скопировать на сервер в каталог пользователя __ssh-copy-id__
 
 Продемонстрировать подключение по ssh под
-пользователем ansible и стать root-ом с помощью sudo.
-Выполнено.
+пользователем ansible и стать root-ом с помощью sudo.\
+__Выполнено.__
 
 ### Установка и работа с tmux
 Tmux - терминальный мультиплексор. Очень удобная штука для работы с несколькимисессиями в системе (или несколькими системами). Позволяет открывать и поддерживать на сервере несколько сессий. Что гарантирует защиту от внезпного завершения процессов в вашей консоли при разрыве соединения без использования nohup . [Статья тут](https://habr.com/ru/post/327630/)
 
-`ctrl+b ... c` создание нового окна
-`ctrl+b ... w` переключение между окнами
-`ctrl+b ... l` переключение между 2-мя последними
-`ctrl+b ... 0` переключиться на конкретное окно по его номеру, например первое
-`ctrl+b ... d` Если нужно отключиться без завершения сессий
+`ctrl+b ... c` создание нового окна\
+`ctrl+b ... w` переключение между окнами\
+`ctrl+b ... l` переключение между 2-мя последними\
+`ctrl+b ... 0` переключиться на конкретное окно по его номеру, например первое\
+`ctrl+b ... d` Если нужно отключиться без завершения сессий\
 `ctrl+b ... x` закрытие окна с подтверждением
 
 Для повторного подключения к нужной сессии tmux a -t $ID :
@@ -139,7 +139,7 @@ Tmux - терминальный мультиплексор. Очень удоб�
 
 ### Продвинутая работа с системой
 
-Выведем LA:
+Выведем LA:\
 `cat /proc/loadavg | awk '{ print $1,$2,$3" processes: "$4", last PID: "$5}'`
 
 __LA, Load average__ - среднее значение загрузки системы за некоторый период времени, как правило, отображается в виде трёх значений, которые представляют собой усредненные сглаженные величины за последние 1, 5 и 15 минут. Вычисляется как длина очереди выполнения в операционной системе, где единица означает, что очередь
@@ -164,7 +164,7 @@ __LA, Load average__ - среднее значение загрузки сист
 `crontab -l` - просмотреть задачи
 
 <p align="center">
- <img width="800px" src="cron.png">
+ <img width="1000px" src="cron.png">
 </p>
 
 >Исходя из этого конфига следует, что в /etc/cron.{hourly,daily,
@@ -186,13 +186,13 @@ weekly,monthly} лежат скрипты, запускающиеся соотв
 
 You can run the script with the `--dry-run` option to learn what steps the script will run when invoked:
 
- `curl -fsSL https://get.docker.com -o get-docker.sh`
+ `curl -fsSL https://get.docker.com -o get-docker.sh`\
 `sudo sh ./get-docker.sh --dry-run`
 
 This example downloads the script from https://get.docker.com/
 and runs it to install the latest stable release of Docker on Linux:
 
-`curl -fsSL https://get.docker.com -o get-docker.sh`
+`curl -fsSL https://get.docker.com -o get-docker.sh`\
 `sudo sh get-docker.sh`
 
 You have now successfully installed and started Docker Engine. The docker service starts automatically on Debian based distributions. On RPM based distributions, such as CentOS, Fedora, RHEL or SLES, you need to start it manually using the appropriate systemctl or service command. As the message indicates, non-root users can't run Docker commands by default.
@@ -211,7 +211,7 @@ Uninstall the Docker Engine, CLI, containerd, and Docker Compose packages:
 
 Images, containers, volumes, or custom configuration files on your host aren't automatically removed. To delete all images, containers, and volumes:
 
- `sudo rm -rf /var/lib/docker`
+ `sudo rm -rf /var/lib/docker`\
  `sudo rm -rf /var/lib/containerd`
 
 You have to delete any edited configuration files manually.
