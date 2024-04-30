@@ -3,14 +3,11 @@
 Тинькофф Образование
 
 
-## Лекции
-
-Видеозаписи лекций:
-
-* [youtube](https://www.youtube.com/watch?v=L1zuhx0ZGYs&list=PLjCCarnDJNstX36A6Cw_YD28thNFev1op&pp=iAQB)
+## Содержание
 
 Презентации:
 
-* __Лекция 1__. [Примеры сбоев](/Tinkoff_Lections/01_Lection/01_lesson.md)
-
-* __Лекция 2__. [Что такое SRE](/Tinkoff_Lections/02_Lection/02_lesson.md)
+* Лекция 1 | [Примеры сбоев](/Tinkoff_Lections/01_Lection/01_lesson.md)
+* Лекция 2 | [Что такое SRE](/Tinkoff_Lections/02_Lection/02_lesson.md)
+* Лекция 3 | [Цели мониторинга, логи и метрики](/Tinkoff_Lections/03_Lection/03_lesson.md)
+* Лекция 4 | [Детектирование проблем до и во время сбоя](/Tinkoff_Lections/04_Lection/04_lesson.md)
