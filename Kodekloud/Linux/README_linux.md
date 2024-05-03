@@ -15,7 +15,7 @@
 | Linux Archives                                                              |✅      |
 | Linux File Permissions                                                      |✅      |
 | Linux Access Control List                                                   |✅      |
-| Linux String Substitute                                                     |        |
+| Linux String Substitute                                                     |✅      |
 | Linux Remote Copy                                                           |        |
 | Cron schedule deny to users                                                 |        |
 | Linux Run Levels                                                            |        |
