@@ -11,5 +11,5 @@
   - [Лекции. Содержание](Tinkoff_Lections/README_Tinkoff.md)
 <br>
 
-- Internet | Kodekloud Engineer | [Платформа](https://engineer.kodekloud.com/signup?referral=661c1688e6864249af539613)&ensp;![Progress](https://progress-bar.dev/35)
+- Kodekloud Engineer | [Интернет Платформа](https://engineer.kodekloud.com/signup?referral=661c1688e6864249af539613)&ensp;![Progress](https://progress-bar.dev/35)
   - [Этапы прохождения](/Kodekloud/README.md)
