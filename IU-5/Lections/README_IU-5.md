@@ -6,6 +6,7 @@
 
 * **Лекция 1**. [Введение в DevOps](/IU-5/Lections/01_Lection/L1-text.md)
 * **Лекция 2**. [Введение в Docker](/IU-5/Lections/02_Lection/L2.md)
+* **Лекция 3**. [Контроль версий. Git. CI и CD](/IU-5/Lections/03_Lection/L3.md)
 
 
 Дополнительные ссылки:
