@@ -7,10 +7,10 @@
 
 ## Ranking
 
-- Обновлено 03/05/2024: Путь к **System Administrator**
+- Обновлено 06/05/2024: Путь к **System Administrator**
 
 
-![System Administrator](rank.png)
+![System Administrator](rank1.png)
 
 ## Этапы прохождения
 

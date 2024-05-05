@@ -8,7 +8,7 @@ Install the required packages of SElinux on App server 3 in Stratos Datacenter a
 
 ### Решение
 
-Сервер stapp03, пользователь banner, подключение по SSH
+Сервер stapp03, пользователь banner, подключение по SSH\
 `ssh banner@stapp93`
 
 Вношу изменения 

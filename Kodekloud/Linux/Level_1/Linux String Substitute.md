@@ -23,13 +23,13 @@ thor@jump_host ~$ history
 [clint@stbkp01 ~]$ groups
 clint wheel
 ``` 
-Файл не маленький, руками не поправишь, да и не в этом суть задачи
+Файл не маленький, руками не поправишь, да и не в этом суть задачи\
 `[clint@stbkp01 ~]$ sudo cat /root/nautilus.xml`
 
-Делаю резервную копию, на всякий случай:
+Делаю резервную копию, на всякий случай:\
 `[clint@stbkp01 ~]$ sudo cp /root/nautilus.xml /root/nautilus.xml.bak`
 
-__SED__
+__SED__\
 `sudo sed -i 's/Text/Maritime/g' /root/nautilus.xml`
 
 Используем опцию -i для применения непосредственно в файле, а не в stdout.
