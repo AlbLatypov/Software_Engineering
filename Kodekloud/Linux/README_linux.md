@@ -2,7 +2,7 @@
 
 
 ### Level 1. 
-[Сертификат ссылка](https://engineer.kodekloud.com/certificate-verification/81bfbf9d-7304-4fb0-94db-f15959d00b25)
+[Сертификат ссылка](https://engineer.kodekloud.com/certificate-verification/81bfbf9d-7304-4fb0-94db-f15959d00b25)\
 [Сертификат PDF](./Level_1/KodeKloud_Course_Certificate-2.pdf)
 
 | Command                                                                     | Result |
@@ -27,7 +27,7 @@
 | Linux Resource Limits                                                       |✅      |
 | Selinux Installation                                                        |✅      |
 
- - [Level 1. Linux String Sustitute](../Linux/Level_1/Linux%20String%20Substitute.md)
+ - [Level 1. Linux String Substitute](../Linux/Level_1/Linux%20String%20Substitute.md)
  - [Level 1.Linux Remote Copy](../Linux/Level_1/Linux%20Remote%20Copy.md)
  - [Level 1. Cron schedule deny to users](../Linux/Level_1/Cron%20schedule%20deny%20to%20users.md)
  - [Level 1. Linux Run Levels](../Linux/Level_1/Linux%20Run%20Levels.md)
