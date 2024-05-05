@@ -12,5 +12,6 @@
 ![Level 2 list](../Ansible/Level_2/Level2_list.png)
 
  - [Ansible Ping Module Usage](../Ansible/Level_2/Ansible%20_ping.md)
+ - [Ansible Install Package](../Ansible/Level_2/Ansible%20Install%20Package.md)
 
 
