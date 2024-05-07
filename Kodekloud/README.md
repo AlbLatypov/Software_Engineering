@@ -7,10 +7,10 @@
 
 ## Ranking
 
-- Обновлено 06/05/2024: Путь к **System Administrator**
+- Обновлено 08/05/2024: Путь к **System Administrator**
 
 
-![System Administrator](rank1.png)
+![System Administrator](rank2.png)
 
 ## Этапы прохождения
 
@@ -18,6 +18,10 @@
  * [Git page](/Kodekloud/Git/README_git.md)
  * [Docker page](/Kodekloud/Docker/README_docker.md)
  * [Ansible page](/Kodekloud/Ansible/README_ansible.md)
+
+
+
+<br>
 
 
 [НА ГЛАВНУЮ](/README.md)
