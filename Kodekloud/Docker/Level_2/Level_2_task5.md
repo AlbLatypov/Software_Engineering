@@ -18,7 +18,7 @@ FROM ubuntu
 
 RUN apt update 
 
-RUN apt install-y apache2
+RUN apt install -y apache2
 
 RUN sed -i "s/^Listen 80/Listen 8084/g" /etc/apache2/ports.conf
 ```

@@ -13,3 +13,6 @@
 
 - Kodekloud Engineer | [Интернет Платформа](https://engineer.kodekloud.com/signup?referral=661c1688e6864249af539613)&ensp;![Progress](https://progress-bar.dev/35)
   - [Этапы прохождения](/Kodekloud/README.md)
+<br>
+- Stepik | [Мониторинг в IT](https://stepik.org/195394)&ensp;![Progress](https://progress-bar.dev/10)
+  - [Документация по курсу](/Stepik-Monitoring-it/README.monitoring.md)
