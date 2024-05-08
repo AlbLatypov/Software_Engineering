@@ -42,3 +42,4 @@
 ### Level 2
 
 - [Level 2. Create a Cron Job](../Linux/Level_2/lvl_2_tsk_1.md)
+- [Level 2. Linux banner](../Linux/Level_2/lvl_2_tsk_1.md)
