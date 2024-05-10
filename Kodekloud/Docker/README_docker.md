@@ -23,10 +23,10 @@
 ### Level 3
 
 - [Level 3 | Create a Docker Network](/Kodekloud/Docker/Level_3/Level_3_task1.md)
-- [Level 3 | Docker Volumes Mapping](/Kodekloud/Docker/Level_2/Level_2_task2.md)
-- [Level 3 | Docker Ports Mapping](/Kodekloud/Docker/Level_2/Level_2_task3.md)
-- [Level 3 | Save, Load and Transfer Docker Image](/Kodekloud/Docker/Level_2/Level_2_task4.md)
-- [Level 3 | Write a Docker Compose File](/Kodekloud/Docker/Level_2/Level_2_task5.md)
+- [Level 3 | Docker Volumes Mapping](/Kodekloud/Docker/Level_3/Level_3_task2.md)
+- [Level 3 | Docker Ports Mapping](/Kodekloud/Docker/Level_3/Level_3_task3.md)
+- [Level 3 | Save, Load and Transfer Docker Image](/Kodekloud/Docker/Level_3/Level_3_task4.md)
+- [Level 3 | Write a Docker Compose File](/Kodekloud/Docker/Level_3/Level_3_task5.md)
 
 
 
@@ -35,3 +35,10 @@
 #### Документация
 - [Docker Documentation | Docker container RUN](./Docs/docker-RUN.md)
 - [Docker Documentation | Volumes](./Docs/volumes.md)
+- [Docker Documentation | Docker image tag](./Docs/docker%20image%20tag.md)
+- [Docker Documentation | Docker container commit](./Docs/docker%20container%20commit.md)
+- [Docker Documentation | Docker container save](./Docs/docker%20save.md)
+- [Docker Documentation | Docker container load](./Docs/docker%20load.md)
+- [Docker Documentation | curl -Ik localhost:6100 ](./Docs/curl.md)
+- [Habr | Вы должны перестать вручную писать Dockerfile'ы](https://habr.com/ru/articles/807501/)
+

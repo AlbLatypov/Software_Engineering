@@ -41,5 +41,13 @@
 
 ### Level 2
 
-- [Level 2. Create a Cron Job](../Linux/Level_2/lvl_2_tsk_1.md)
-- [Level 2. Linux banner](../Linux/Level_2/lvl_2_tsk_1.md)
+- [Level 2. Create a Cron Job + Ansible](../Linux/Level_2/lvl_2_tsk_1.md)
+- [Level 2. Linux banner](../Linux/Level_2/lvl_2_tsk_2.md)
+- [Level 2. Linux Collaborative Directories](../Linux/Level_2/lvl_2_tsk_3.md)
+- [Level 2. Linux String Substitute (sed)](../Linux/Level_2/lvl_2_tsk_4.md)
+
+<br>
+
+#### Дополнительно:
+  - [SED delete lines](../Linux/docs/sed_delete.md)
+

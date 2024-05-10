@@ -7,7 +7,7 @@ a. Create an image blog:datacenter on Application Server 1 from a container ubun
 
 __Решение__
 
-[Docs | Docker Container Commit](../Level_2/info/docker%20container%20commit.md)
+[Docs | Docker Container Commit](../Docs/docker%20container%20commit.md)
 
 ```bash
 thor@jump_host ~$ ssh tony@stapp01

@@ -1,4 +1,4 @@
-# Pull Docker Image
+# Create a Docker Network
 
 The Nautilus DevOps team needs to set up several docker environments for different applications. One of the team members has been assigned a ticket where he has been asked to create some docker networks to be used later. Complete the task based on the following ticket description:
 

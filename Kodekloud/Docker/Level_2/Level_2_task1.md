@@ -8,7 +8,7 @@ __Решение__
 
 Сделать новый тэг на образе.
 
-[Docs | Docker image tag](../Level_2/info/docker%20image%20tag.md)
+[Docs | Docker image tag](../Docs/docker%20image%20tag.md)
 
 Выполнение на сервере:
 ```bash

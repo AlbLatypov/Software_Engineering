@@ -10,7 +10,7 @@ c. Make sure Apache service is up and running inside the container. Keep the con
 
 __Решение__
 
-[curl -Ik localhost:6100](../Level_2/info/curl.md)
+[curl -Ik localhost:6100](../Docs/curl.md)
 
 
 
