@@ -65,10 +65,10 @@ __Обновление и установка пакетов__
 
 Для установки новых пакетов или обновления уже установленных пакетов используются команды apt install и apt upgrade:
 
-`sudo apt install package-name`
-`sudo apt upgrade`
-`apt-add-repository - добавление нового репозитория.`
-`apt-get update - обновление списка доступных пакетов.`
+`sudo apt install package-name`\
+`sudo apt upgrade`\
+`apt-add-repository - добавление нового репозитория.`\
+`apt-get update - обновление списка доступных пакетов.`\
 `apt-cache policy - просмотр настроенных репозиториев.`
 
 
