@@ -45,9 +45,19 @@
 - [Level 2. Linux banner](../Linux/Level_2/lvl_2_tsk_2.md)
 - [Level 2. Linux Collaborative Directories](../Linux/Level_2/lvl_2_tsk_3.md)
 - [Level 2. Linux String Substitute (sed)](../Linux/Level_2/lvl_2_tsk_4.md)
+- [Level 2. Linux SSH Authentication](../Linux/Level_2/lvl_2_tsk_5.md)
+- [Level 2. Linux Find Command](../Linux/Level_2/lvl_2_tsk_6.md)
+- [Level 2. Install a package](../Linux/Level_2/lvl_2_tsk_7.md)
+- [Level 2. Install Ansible](../Linux/Level_2/lvl_2_tsk_8.md)
+- [Level 2. Configure Local Yum repos](../Linux/Level_2/lvl_2_tsk_9.md)
+- [Level 2. Linux Services](../Linux/Level_2/lvl_2_tsk_10.md)
+- [Level 2. Linux Configure sudo](../Linux/Level_2/lvl_2_tsk_11.md)
 
 <br>
 
 #### Дополнительно:
   - [SED delete lines](../Linux/docs/sed_delete.md)
+  - [Создание репозитория](../Linux/docs/repo.epel_local.md)
+  - [GPG. Шифрование и создание цифровых подписей.](../Linux/docs/gpg_keys.md)
+  - [Ubuntu. Репозитории](../Linux/docs/repo_ubuntu.md)
 
