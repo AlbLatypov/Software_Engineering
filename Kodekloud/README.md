@@ -10,7 +10,7 @@
 - Обновлено 12/05/2024: Путь к **Devops Junior**
 
 
-![System Administrator](rank3.png)
+![System Administrator](rank4.png)
 
 ## Этапы прохождения
 

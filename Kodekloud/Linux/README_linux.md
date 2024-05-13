@@ -52,6 +52,10 @@
 - [Level 2. Configure Local Yum repos](../Linux/Level_2/lvl_2_tsk_9.md)
 - [Level 2. Linux Services](../Linux/Level_2/lvl_2_tsk_10.md)
 - [Level 2. Linux Configure sudo](../Linux/Level_2/lvl_2_tsk_11.md)
+- [Level 2. DNS Troubleshooting](../Linux/Level_2/lvl_2_tsk_12.md)
+- [Level 2. Linux Firewalld Setup](../Linux/Level_2/lvl_2_tsk_13.md)
+- [Level 2. Linux Postfix Mail Server](../Linux/Level_2/lvl_2_tsk_14.md)
+- [Level 2. Linux Postfix Troubleshooting](../Linux/Level_2/lvl_2_tsk_15.md)
 
 <br>
 
