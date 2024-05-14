@@ -1,92 +1,73 @@
-# Resolve DockerCompose Issues
+# Deploy an App on Docker Containers
 
-To secure our Nautilus infrastructure in Stratos Datacenter we have decided to install and configure firewalld on all app servers. We have Apache and Nginx services running on these apps. Nginx is running as a reverse proxy server for Apache. We might have more robust firewall settings in the future, but for now we have decided to go with the given requirements listed below:
+The Nautilus Application development team recently finished development of one of the apps that they want to deploy on a containerized platform. The Nautilus Application development and DevOps teams met to discuss some of the basic pre-requisites and requirements to complete the deployment. The team wants to test the deployment on one of the app servers before going live and set up a complete containerized stack using a docker compose fie. Below are the details of the task:
 
 
-a. Allow all incoming connections on Nginx port, i.e 80.
+On App Server 3 in Stratos Datacenter create a docker compose file /opt/data/docker-compose.yml (should be named exactly).
 
-b. Block all incoming connections on Apache port, i.e 8080.
+The compose should deploy two services (web and DB), and each service should deploy a container as per details below:
 
-c. All rules must be permanent.
+For web service:
 
-d. Zone should be public.
+a. Container name must be php_web.
 
-e. If Apache or Nginx services aren't running already, please make sure to start them.
+b. Use image php with any apache tag. [Check here for more details](https://hub.docker.com/_/php?tab=tags/)
+
+c. Map php_web container's port 80 with host port 5002
+
+d. Map php_web container's /var/www/html volume with host volume /var/www/html.
+
+For DB service:
+
+a. Container name must be mysql_web.
+
+b. Use image mariadb with any tag (preferably latest). Check here for more details.
+
+c. Map mysql_web container's port 3306 with host port 3306
+
+d. Map mysql_web container's /var/lib/mysql volume with host volume /var/lib/mysql.
+
+e. Set MYSQL_DATABASE=database_web and use any custom user ( except root ) with some complex password for DB connections.
+
+    After running docker-compose up you can access the app with curl command curl <server-ip or hostname>:5002/
+
+[For more details check here.](https://hub.docker.com/_/mariadb?tab=tags/)
+
+Note: Once you click on FINISH button, all currently running/stopped containers will be destroyed and stack will be deployed again using your compose file.
+
 
 
 
 
 #### Решение
 
+Создал согласно условия следующий ямл
+
 ```bash
-Представлен следующий compose-file:
-
-name: myapp
+version: '3.8'
 
 services:
-    web:
-        image: ./app
-        container_name: python
-        port:
-            - "5000:5000"
-        volumes:
-            - ./app:/code
-        depends_on:
-            - redis
-    redis_app:
-        image: redis
-        container_name: redis
 
-Отредактировал так:
-
-services:
-  redis_app:
-    image: redis:latest
-    container_name: redis
   web:
-    build: ./app
-    container_name: python
+    image: php:apache-bullseye
+    container_name: php_web
     ports:
-      - "5000:5000"
+      - 5002:80
     volumes:
-      - ./app:/code
-    depends_on:
-      - redis_app
-```
-Должно быть верно.
+      - /var/www/html:/var/www/html
 
-Содержимое каталога .app:
-
-app.py
-```bash
-# compose_flask/app.py
-from flask import Flask
-from redis import Redis
-
-app = Flask(__name__)
-redis = Redis(host='redis', port=6379)
-
-@app.route('/')
-def hello():
-    redis.incr('hits')
-    return 'This Compose/Flask demo has been viewed %s time(s).' % redis.get('hits')
-
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", debug=True)[steve@stapp02 app]$ 
-```
-
-Dockerfile
-```bash
-FROM python:3.13.0b1-slim-bullseye
-ADD . /code
-WORKDIR /code
-RUN pip install -r requirements.txt
-CMD python app.py[steve@stapp02 app]$ 
-```
-
-requirements.txt
-```bash
-flask
+  db:
+    image: mariadb:latest
+    container_name: mysql_web
+    restart: always
+    ports:
+      - 3306:3306
+    volumes:
+      - /var/lib/mysql:/var/lib/mysql
+    environment:
+      MARIADB_DATABASE: database_web
+      MARIADB_ROOT_PASSWORD: test123
+      MARIADB_USER: albert
+      MARIADB_PASSWORD: 123!@#QWE
 ```
 

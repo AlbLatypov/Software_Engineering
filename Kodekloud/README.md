@@ -7,10 +7,10 @@
 
 ## Ranking
 
-- Обновлено 12/05/2024: Путь к **Devops Junior**
+- Обновлено 15/05/2024: Путь к **Devops Junior**
 
 
-![System Administrator](rank4.png)
+![System Administrator](rank5.png)
 
 ## Этапы прохождения
 

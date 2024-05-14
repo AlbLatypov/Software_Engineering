@@ -56,6 +56,10 @@
 - [Level 2. Linux Firewalld Setup](../Linux/Level_2/lvl_2_tsk_13.md)
 - [Level 2. Linux Postfix Mail Server](../Linux/Level_2/lvl_2_tsk_14.md)
 - [Level 2. Linux Postfix Troubleshooting](../Linux/Level_2/lvl_2_tsk_15.md)
+- [Level 2. Install and Configure Ha Proxy LBR](../Linux/Level_2/lvl_2_tsk_16.md)
+- [Level 2. Haproxy LBR Troubleshooting](../Linux/Level_2/lvl_2_tsk_17.md)
+- [Level 2. Maria DB Troubleshooting](../Linux/Level_2/lvl_2_tsk_18.md)
+- [Level 2. Linux Bash Scripts](../Linux/Level_2/lvl_2_tsk_19.md)
 
 <br>
 
@@ -64,4 +68,5 @@
   - [Создание репозитория](../Linux/docs/repo.epel_local.md)
   - [GPG. Шифрование и создание цифровых подписей.](../Linux/docs/gpg_keys.md)
   - [Ubuntu. Репозитории](../Linux/docs/repo_ubuntu.md)
+  - [Install and Configure Ha Proxy LBR](../Linux/docs/Install%20and%20Configure%20Ha%20Proxy%20LBR.md)
 
