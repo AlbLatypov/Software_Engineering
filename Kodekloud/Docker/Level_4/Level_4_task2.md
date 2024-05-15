@@ -78,7 +78,8 @@ FROM python:3.13.0b1-slim-bullseye
 ADD . /code
 WORKDIR /code
 RUN pip install -r requirements.txt
-CMD python app.py[steve@stapp02 app]$ 
+CMD python app.py
+
 ```
 
 requirements.txt
