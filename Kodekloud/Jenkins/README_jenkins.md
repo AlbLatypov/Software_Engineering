@@ -17,7 +17,7 @@
 
 - [Level 2 | Jenkins Views](/Kodekloud/Jenkins/Level_2/Level_2_task1.md)
 - [Level 2 | Jenkins Parameterized Builds](/Kodekloud/Jenkins/Level_2/Level_2_task2.md)
-- [Level 2 | Jenkins Create Users](/Kodekloud/Jenkins/Level_2/Level_2_task3.md)
-- [Level 2 | Jenkins Folders](/Kodekloud/Jenkins/Level_2/Level_2_task4.md)
-- [Level 2 | Jenkins Install Packages](/Kodekloud/Jenkins/Level_2/Level_2_task5.md)
+- [Level 2 | Jenkins Workspaces](/Kodekloud/Jenkins/Level_2/Level_2_task3.md)
+- [Level 2 | Jenkins Database Backup Job](/Kodekloud/Jenkins/Level_2/Level_2_task4.md)
+- [Level 2 | Jenkins Scheduled Jobs](/Kodekloud/Jenkins/Level_2/Level_2_task5.md)
 
