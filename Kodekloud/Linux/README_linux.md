@@ -60,6 +60,11 @@
 - [Level 2. Haproxy LBR Troubleshooting](../Linux/Level_2/lvl_2_tsk_17.md)
 - [Level 2. Maria DB Troubleshooting](../Linux/Level_2/lvl_2_tsk_18.md)
 - [Level 2. Linux Bash Scripts](../Linux/Level_2/lvl_2_tsk_19.md)
+- [Level 2. Add Response Headers in Apache](../Linux/Level_2/lvl_2_tsk_20.md)
+- [Level 2. Apache Troubleshooting](../Linux/Level_2/lvl_2_tsk_21.md)
+- [Level 2. Linux GPG Encryption](../Linux/Level_2/lvl_2_tsk_22.md)
+- [Level 2. Linux Log Rotate](../Linux/Level_2/lvl_2_tsk_23.md)
+- [Level 2. Application Security](../Linux/Level_2/lvl_2_tsk_24.md)
 
 <br>
 
