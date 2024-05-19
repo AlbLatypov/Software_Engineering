@@ -1,0 +1,7 @@
+# Jenkins Workspaces
+
+
+
+
+### Решение
+

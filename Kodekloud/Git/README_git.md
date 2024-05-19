@@ -16,8 +16,16 @@
 
 ### Level 2
 
-- [Level 2 | Git Install and Create Repository](/Kodekloud/Git/Level_2/Level_1_task1.md)
+- [Level 2 | Git Install and Create Repository](/Kodekloud/Git/Level_2/Level_2_task1.md)
 - [Level 2 | Git Create Branches](/Kodekloud/Git/Level_2/Level_2_task2.md)
 - [Level 2 | Git Merge Branches](/Kodekloud/Git/Level_2/Level_2_task3.md)
 - [Level 2 | Git Manage Remotes](/Kodekloud/Git/Level_2/Level_2_task4.md)
 - [Level 2 | Git Revert Some Changes](/Kodekloud/Git/Level_2/Level_2_task5.md)
+
+### Level 3
+
+- [Level 3 | Git Cherry Pick](/Kodekloud/Git/Level_3/Level_3_task1.md)
+- [Level 3 | Manage Git Pull Requests](/Kodekloud/Git/Level_3/Level_3_task2.md)
+- [Level 3 | Git hard reset](/Kodekloud/Git/Level_3/Level_3_task3.md)
+- [Level 3 | Git Clean](/Kodekloud/Git/Level_3/Level_3_task4.md)
+- [Level 3 | Git Stash](/Kodekloud/Git/Level_3/Level_3_task5.md)

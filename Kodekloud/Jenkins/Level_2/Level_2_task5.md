@@ -1,0 +1,7 @@
+# Jenkins Scheduled Jobs
+
+
+
+
+### Решение
+
