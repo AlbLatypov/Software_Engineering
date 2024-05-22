@@ -1,0 +1,9 @@
+# Jenkins Conditional Pipeline
+
+
+
+
+### Решение
+
+
+

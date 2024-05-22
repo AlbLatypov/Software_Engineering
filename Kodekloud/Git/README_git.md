@@ -29,3 +29,11 @@
 - [Level 3 | Git hard reset](/Kodekloud/Git/Level_3/Level_3_task3.md)
 - [Level 3 | Git Clean](/Kodekloud/Git/Level_3/Level_3_task4.md)
 - [Level 3 | Git Stash](/Kodekloud/Git/Level_3/Level_3_task5.md)
+
+### Level 4
+
+- [Level 4 | Git Rebase](/Kodekloud/Git/Level_4/Level_4_task1.md)
+- [Level 4 | Manage Git Repositories](/Kodekloud/Git/Level_4/Level_4_task2.md)
+- [Level 4 | Resolve Git Merge Conflicts](/Kodekloud/Git/Level_4/Level_4_task3.md)
+- [Level 4 | Git Hook](/Kodekloud/Git/Level_4/Level_4_task4.md)
+- [Level 4 | Git Setup from Scratch](/Kodekloud/Git/Level_4/Level_4_task5.md)

@@ -21,3 +21,12 @@
 - [Level 2 | Jenkins Database Backup Job](/Kodekloud/Jenkins/Level_2/Level_2_task4.md)
 - [Level 2 | Jenkins Scheduled Jobs](/Kodekloud/Jenkins/Level_2/Level_2_task5.md)
 
+
+### Level 3
+
+- [Level 3 | Jenkins Slave Nodes](/Kodekloud/Jenkins/Level_3/Level_3_task1.md)
+- [Level 3 | Jenkins Parameterized Builds](/Kodekloud/Jenkins/Level_3/Level_3_task2.md)
+- [Level 3 | Jenkins Workspaces](/Kodekloud/Jenkins/Level_3/Level_3_task3.md)
+- [Level 3 | Jenkins Database Backup Job](/Kodekloud/Jenkins/Level_3/Level_3_task4.md)
+- [Level 3 | Jenkins Scheduled Jobs](/Kodekloud/Jenkins/Level_3/Level_3_task5.md)
+

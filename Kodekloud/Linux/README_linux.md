@@ -74,4 +74,6 @@
   - [GPG. Шифрование и создание цифровых подписей.](../Linux/docs/gpg_keys.md)
   - [Ubuntu. Репозитории](../Linux/docs/repo_ubuntu.md)
   - [Install and Configure Ha Proxy LBR](../Linux/docs/Install%20and%20Configure%20Ha%20Proxy%20LBR.md)
+  - [Vim](../Linux/docs/vim.md)
+  - [Logrotate](../Linux/docs/logrotate.md)
 
