@@ -44,7 +44,7 @@ Click on the Jenkins button on the top bar to access the Jenkins UI. Login using
 
 `java.io.IOException: Java not found on hudson.slaves.SlaveComputer@d7e6a62. Install Java 8 or Java 11 on the Agent.`
 
-Лезем на се:wqрвер. Ставим:
+Идем на сервер. Ставим:
 
 `[root@stapp01 ~]# yum install java-11-openjdk-devel.x86_64`
 

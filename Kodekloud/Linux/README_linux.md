@@ -5,30 +5,18 @@
 [Сертификат ссылка](https://engineer.kodekloud.com/certificate-verification/81bfbf9d-7304-4fb0-94db-f15959d00b25)\
 [Сертификат PDF](./Level_1/KodeKloud_Course_Certificate-2.pdf)
 
-| Command                                                                     | Result |
-| --------------------------------------------------------------------------- |--------|
-| Create user                                                                 |✅      |
-| Create group                                                                |✅      |
-| Create a Linux User with non-interactive shell                              |✅      |
-| Linux User Without Home                                                     |✅      |
-| Linux User Expiry                                                           |✅      |
-| Linux User Files                                                            |✅      |
-| Disable Root login                                                          |✅      |
-| Linux Archives                                                              |✅      |
-| Linux File Permissions                                                      |✅      |
-| Linux Access Control List                                                   |✅      |
-| Linux String Substitute                                                     |✅      |
-| Linux Remote Copy                                                           |✅      |
-| Cron schedule deny to users                                                 |✅      |
-| Linux Run Levels                                                            |✅      |
-| Linux TimeZones Settings                                                    |✅      |
-| Linux NTP Setup                                                             |✅      |
-| Linux Firewalld Rules                                                       |✅      |
-| Linux Resource Limits                                                       |✅      |
-| Selinux Installation                                                        |✅      |
 
+
+ - [Level 1. Custom Apache User Setup](../Linux/Level_1/level1_task1.md)
+ - [Level 1. Group Creation and User Assignment](../Linux/Level_1/level1_task2.md)
+ - [Level 1. Linux User Setup with Non-Interactive Shell](../Linux/Level_1/level1_task3.md)
+ - [Level 1. Service User Creation without Home Directory](../Linux/Level_1/level1_task4.md)
+ - [Level 1. Temporary User Setup with Expiry](../Linux/Level_1/level1_task5.md)
+ - [Level 1. Linux User Data Transfer](../Linux/Level_1/level1_task6.md)
+ - [Level 1. Secure Root SSH Access](../Linux/Level_1/level1_task7.md)
+ - [Level 1. Data Backup for Developer](../Linux/Level_1/level1_task8.md)
  - [Level 1. Linux String Substitute](../Linux/Level_1/Linux%20String%20Substitute.md)
- - [Level 1.Linux Remote Copy](../Linux/Level_1/Linux%20Remote%20Copy.md)
+ - [Level 1. Linux Remote Copy](../Linux/Level_1/Linux%20Remote%20Copy.md)
  - [Level 1. Cron schedule deny to users](../Linux/Level_1/Cron%20schedule%20deny%20to%20users.md)
  - [Level 1. Linux Run Levels](../Linux/Level_1/Linux%20Run%20Levels.md)
  - [Level 1. Linux NTP Setup](../Linux/Level_1/Linux%20NTP%20Setup.md)

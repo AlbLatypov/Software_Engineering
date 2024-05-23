@@ -1,87 +1,80 @@
 # Application Security
 
-We have a backup management application UI hosted on Nautilus's backup server in Stratos DC. That backup management application code is deployed under Apache on the backup server itself, and Nginx is running as a reverse proxy on the same server. Apache and Nginx ports are 8085 and 8099, respectively. We have iptables firewall installed on this server. Make the appropriate changes to fulfill the requirements mentioned below:
+We have a backup management application UI hosted on Nautilus's backup server in Stratos DC. That backup management application code is deployed under Apache on the backup server itself, and Nginx is running as a reverse proxy on the same server. _Apache_ and __Nginx__ ports are _6400_ and __8096__, respectively. We have iptables firewall installed on this server. Make the appropriate changes to fulfill the requirements mentioned below:
 
 
 We want to open all incoming connections to Nginx's port and block all incoming connections to Apache's port. Also make sure rules are permanent.
 
 
 
+
 ### Решение
 
-Изменение дефолтной политики
-`iptables -P INPUT DROP`
+Подключаемся к серверу, смотрим:
 
-
-Разбор правила ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0            ctstate RELATED,ESTABLISHED
 ```bash
-Эта строка описывает правило в iptables, которое разрешает (ACCEPT) прохождение сетевых пакетов, если они относятся к уже установленным или связанным соединениям.
+[root@stbkp01 ~]# ss -atlpn
+State      Recv-Q Send-Q                   Local Address:Port                                  Peer Address:Port              
+LISTEN     0      511                                  *:80                                               *:*  
+```
 
-Давайте разберем каждый элемент этой строки:
+nginx работает на 80 порту. Не соответствует условиям. Вносим изменения в конфиг. Меняем порт на 8096, ipv6 не слушаем... Apache работает на 6400, как и в условии.
+```bash
+    server {
+        listen       8096;
+        #listen       [::]:80;
+        server_name  _;
+        root         /usr/share/nginx/html;
+```
 
-    ACCEPT: действие, которое будет выполнено с пакетом, соответствующим условиям правила. В данном случае пакет будет пропущен.
-    all: протокол, к которому применяется правило. all означает, что правило применяется ко всем протоколам (TCP, UDP, ICMP и т.д.).
-    --: разделитель между протоколом и источником пакета.
-    *: источник пакета. * означает любой источник.
-    *: пункт назначения пакета. * означает любое назначение.
-    0.0.0.0/0: IP-адрес источника. 0.0.0.0/0 означает любой IP-адрес.
-    0.0.0.0/0: IP-адрес назначения. 0.0.0.0/0 означает любой IP-адрес.
-    ctstate RELATED,ESTABLISHED: этот параметр относится к модулю conntrack и указывает, что правило применяется только к пакетам, которые относятся к уже установленным (ESTABLISHED) соединениям или связаны (RELATED) с ними.
+`[root@stbkp01 ~]# systemctl restart nginx`
 
-В итоге, это правило разрешает прохождение всех пакетов, которые являются частью уже установленных соединений, или связаны с ними, независимо от протокола, источника и назначения.
-
-Такое правило часто используется для того, чтобы разрешить ответы на исходящие запросы. Например, если ваш компьютер отправил запрос на веб-сервер, то ответ от сервера будет разрешен этим правилом, так как он связан с установленным соединением.
+Смотрим правила для INPUT iptables `watch -d iptables -L INPUT -n -v --line-numbers`:
+```bash
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+num   pkts bytes target     prot opt in     out     source               destination
+1      682 54306 ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0            ctstate RELATED,ESTABLISHED
+2        4   284 ACCEPT     all  --  lo     *       0.0.0.0/0            0.0.0.0/0
+3        2   120 INPUT_direct  all  --  *      *       0.0.0.0/0            0.0.0.0/0
+4        2   120 INPUT_ZONES_SOURCE  all  --  *      *       0.0.0.0/0            0.0.0.0/0
+5        2   120 INPUT_ZONES  all  --  *      *       0.0.0.0/0            0.0.0.0/0
+6        0     0 DROP       all  --  *      *       0.0.0.0/0            0.0.0.0/0            ctstate INVALID
+7        0     0 REJECT     all  --  *      *       0.0.0.0/0            0.0.0.0/0            reject-with icmp-host-prohibited
 
 ```
 
+Добавлю 3 и 4 правилом:
 
-`watch -d iptables -L INPUT -n -v --line-numbers`
+`iptables -I INPUT 3 -p tcp --dport 8096 -m comment --comment "accept nginx" -j ACCEPT`
+`iptables -I INPUT 4 -p tcp --dport 6400 -m comment --comment "drop apache" -j DROP`
 
-Вставить правило в начало цепочки:
-`iptables -I INPUT -s 192.168.34.37 -j ACCEPT`
+До и после применения правил:
+```bash
+thor@jump_host ~$ telnet stbkp01 8096
+Trying 172.16.238.16...
+telnet: connect to address 172.16.238.16: No route to host
 
-Удалить правило 3
-`iptables -D INPUT 3` 
+thor@jump_host ~$ telnet stbkp01 8096
+Trying 172.16.238.16...
+Connected to stbkp01.
+Escape character is '^]'.
 
-Разрешить соединение на tcp порт всем.
-`iptables -A INPUT -p tcp --destination-port 22 -j ACCEPT`
-
-Добавить в начало -I правило разрешить на 8094 всем
-`iptables -I INPUT -p tcp --dport 8094 -m comment --comment "accept nginx" -j ACCEPT`
-
-Вставить правило на определеное место, в данном случае 2:
-`sudo iptables -I INPUT 2 -p icmp -j REJECT`
-
-Добавить вторым правилом 
-`iptables -I  INPUT 2 -p tcp --dport 8084 -m comment --comment "drop apache" -j DROP`
-
-Заменить
-Команда iptables -R INPUT 5 -p icmp -j REJECT имеет следующее значение:
-
-    -R INPUT 5: -R стоит для replace, что значит "заменить". Это заменяет правило под номером 5 в цепочке INPUT.
-
-    -p icmp: Это указывает, что правило применяется к ICMP-пакетам. ICMP - это протокол, используемый для отправки сообщений об ошибках и операционной информации, такой как "echo request" (используемый в команде ping) или "destination unreachable".
-
-    -j REJECT: Это говорит iptables отклонить пакеты, которые соответствуют этому правилу. REJECT - это одно из возможных действий, которые iptables может предпринять, и оно означает, что пакет будет отклонен и не будет обработан дальше.
-
-В совокупности, эта команда говорит iptables заменить правило номер 5 в цепочке INPUT на новое правило, которое отклоняет все ICMP-пакеты.
-
-
-Сохранить конфигурацию
-`service iptables save`
-
-Чтобы разрешить все входящие TCP-соединения на порт 8000 в iptables и добавить комментарий "vla", вы можете использовать следующую команду:
-
-sudo iptables -A INPUT -p tcp --dport 8000 -m comment --comment "vla" -j ACCEPT
-
-В этой команде:
-
-    -A INPUT добавляет правило в цепочку INPUT.
-    -p tcp указывает на протокол TCP.
-    --dport 8000 указывает на порт 8000.
-    -m comment --comment "vla" добавляет комментарий "vla" к правилу.
-    -j ACCEPT указывает действие, которое следует принять для пакетов, соответствующих правилу (в данном случае, принять их).
-
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+num   pkts bytes target     prot opt in     out     source               destination
+1     1293 87026 ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0            ctstate RELATED,ESTABLISHED
+2        4   284 ACCEPT     all  --  lo     *       0.0.0.0/0            0.0.0.0/0
+3        1    60 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:8096 /* accept nginx */
+4        0     0 DROP       tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:6400 /* drop apache */
+5        4   240 INPUT_direct  all  --  *      *       0.0.0.0/0            0.0.0.0/0
+6        4   240 INPUT_ZONES_SOURCE  all  --  *      *       0.0.0.0/0            0.0.0.0/0
+7        4   240 INPUT_ZONES  all  --  *      *       0.0.0.0/0            0.0.0.0/0
+8        0     0 DROP       all  --  *      *       0.0.0.0/0            0.0.0.0/0            ctstate INVALID
+9        2   120 REJECT     all  --  *      *       0.0.0.0/0            0.0.0.0/0            reject-with icmp-host-prohibited
+```
+Сохраним правила:
+```bash
+[root@stbkp01 ~]# service iptables save
+iptables: Saving firewall rules to /etc/sysconfig/iptables:[  OK  ]
 ```
 
 
