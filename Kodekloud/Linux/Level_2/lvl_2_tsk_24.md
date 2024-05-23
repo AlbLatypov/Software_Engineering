@@ -45,7 +45,7 @@ num   pkts bytes target     prot opt in     out     source               destina
 
 Добавлю 3 и 4 правилом:
 
-`iptables -I INPUT 3 -p tcp --dport 8096 -m comment --comment "accept nginx" -j ACCEPT`
+`iptables -I INPUT 3 -p tcp --dport 8096 -m comment --comment "accept nginx" -j ACCEPT`\
 `iptables -I INPUT 4 -p tcp --dport 6400 -m comment --comment "drop apache" -j DROP`
 
 До и после применения правил:

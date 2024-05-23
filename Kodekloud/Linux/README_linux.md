@@ -1,11 +1,9 @@
 # Решение задач по Linux
 
-
-### Level 1. 
 [Сертификат ссылка](https://engineer.kodekloud.com/certificate-verification/81bfbf9d-7304-4fb0-94db-f15959d00b25)\
 [Сертификат PDF](./Level_1/KodeKloud_Course_Certificate-2.pdf)
 
-
+### Level 1. 
 
  - [Level 1. Custom Apache User Setup](../Linux/Level_1/level1_task1.md)
  - [Level 1. Group Creation and User Assignment](../Linux/Level_1/level1_task2.md)
