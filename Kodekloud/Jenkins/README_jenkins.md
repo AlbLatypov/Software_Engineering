@@ -25,8 +25,8 @@
 ### Level 3
 
 - [Level 3 | Jenkins Slave Nodes](/Kodekloud/Jenkins/Level_3/Level_3_task1.md)
-- [Level 3 | Jenkins Parameterized Builds](/Kodekloud/Jenkins/Level_3/Level_3_task2.md)
-- [Level 3 | Jenkins Workspaces](/Kodekloud/Jenkins/Level_3/Level_3_task3.md)
-- [Level 3 | Jenkins Database Backup Job](/Kodekloud/Jenkins/Level_3/Level_3_task4.md)
-- [Level 3 | Jenkins Scheduled Jobs](/Kodekloud/Jenkins/Level_3/Level_3_task5.md)
+- [Level 3 | Jenkins Project Security](/Kodekloud/Jenkins/Level_3/Level_3_task2.md)
+- [Level 3 | Jenkins Build Images](/Kodekloud/Jenkins/Level_3/Level_3_task3.md)
+- [Level 3 | Jenkins Deploy Pipeline](/Kodekloud/Jenkins/Level_3/Level_3_task4.md)
+- [Level 3 | Jenkins Conditional Pipeline](/Kodekloud/Jenkins/Level_3/Level_3_task5.md)
 
