@@ -3,7 +3,12 @@
 
 ### Level 1. [+Certificate 🏆](https://engineer.kodekloud.com/certificate-verification/54d4e635-92c5-4900-be5e-f42114b2b1b1)
 
-![Level 1 results](../Ansible/Level_1/level1_results.png)
+ - [Level 1 | Troubleshoot and Create Ansible Playbook](../Ansible/Level_1/level1_task1.md)
+ - [Level 1 | Create Ansible Inventory for App Server Testing](../Ansible/Level_1/level1_task2.md)
+ - [Level 1 | Configure Default SSH User for Ansible](../Ansible/Level_1/level1_task3.md)
+ - [Level 1 | Copy Data to App Servers using Ansible](../Ansible/Level_1/level1_task4.md)
+ - [Level 1 | Create Files on App Servers using Ansible](../Ansible/Level_1/level1_task5.md)
+
 
 [🤓  Экзаменционные задачи по Level 1](../Ansible/Level_1/L1-exam.md)
 
