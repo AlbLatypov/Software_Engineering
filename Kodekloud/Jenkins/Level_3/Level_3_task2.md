@@ -1,4 +1,4 @@
-# Jenkins Project Security
+# Kodekloud. Jenkins Project Security
 
 The xFusionCorp Industries has recruited some new developers. There are already some existing jobs on Jenkins and two of these new developers need permissions to access those jobs. The development team has already shared those requirements with the DevOps team, so as per details mentioned below grant required permissions to the developers.
 

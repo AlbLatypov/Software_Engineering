@@ -1,4 +1,4 @@
-# Jenkins Deploy Pipeline
+# Kodekloud. Jenkins Deploy Pipeline
 
 The development team of xFusionCorp Industries is working on to develop a new static website and they are planning to deploy the same on Nautilus App Servers using Jenkins pipeline. They have shared their requirements with the DevOps team and accordingly we need to create a Jenkins pipeline job. Please find below more details about the task:
 
@@ -40,7 +40,7 @@ drwxr-xr-x 3 sarah sarah 4096 May 23 20:56 html
 агент успешно подключился и онлайн.
 
 4. Создаем pipiline, не забывая аппрувнуть.
-```jenkins
+```groovy
 pipeline {
     agent {
         node {

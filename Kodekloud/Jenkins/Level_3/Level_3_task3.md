@@ -1,4 +1,4 @@
-# Jenkins Build Images
+# Kodekloud. Jenkins Build Images
 
 One of the DevOps engineers was working on to create a Dockerfile for Nginx. We need to build an image using that Dockerfile. The deployment must be done using a Jenkins pipeline. Below you can find more details about the same.
 
@@ -62,7 +62,7 @@ steve wheel docker
 
 Создаем item pipeline. Видел похожие задания, попробую написать сам по аналогии.
 
-```jenkins
+```groovy
 pipeline {
     agent {
         node {

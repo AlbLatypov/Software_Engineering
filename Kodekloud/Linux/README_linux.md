@@ -54,6 +54,9 @@
 - [Level 2. Linux Log Rotate](../Linux/Level_2/lvl_2_tsk_23.md)
 - [Level 2. Application Security](../Linux/Level_2/lvl_2_tsk_24.md)
 
+### Level 3
+
+- [Level 3. Apache Redirects](../Linux/Level_3/lvl_3_tsk_1.md)
 <br>
 
 #### Дополнительно:
@@ -65,4 +68,5 @@
   - [Vim](../Linux/docs/vim.md)
   - [Logrotate](../Linux/docs/logrotate.md)
   - [ACLs](../Linux/docs/ACLs.md)
+  - [Apache, nginx redirect](../Linux/docs/apache-redirect.md)
 

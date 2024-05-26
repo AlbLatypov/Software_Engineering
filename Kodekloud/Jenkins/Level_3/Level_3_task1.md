@@ -1,4 +1,4 @@
-# Jenkins Slave Nodes
+# Kodekloud. Jenkins Slave Nodes
 
 The Nautilus DevOps team has installed and configured new Jenkins server in Stratos DC which they will use for CI/CD and for some automation tasks. There is a requirement to add all app servers as slave nodes in Jenkins so that they can perform tasks on these servers using Jenkins. Find below more details and accomplish the task accordingly.
 
