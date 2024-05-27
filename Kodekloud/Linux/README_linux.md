@@ -56,7 +56,8 @@
 
 ### Level 3
 
-- [Level 3. Apache Redirects](../Linux/Level_3/lvl_3_tsk_1.md)
+- [Level 3. Apache Redirects](../Linux/Linux_3/lvl_3_tsk_1.md)
+- [Level 3. Install And Configure SFTP](../Linux/Linux_3/lvl_3_tsk_2.md)
 <br>
 
 #### Дополнительно:
@@ -69,4 +70,5 @@
   - [Logrotate](../Linux/docs/logrotate.md)
   - [ACLs](../Linux/docs/ACLs.md)
   - [Apache, nginx redirect](../Linux/docs/apache-redirect.md)
+  - [Tomcat about](../Linux/docs/tomcat_about.md)
 
