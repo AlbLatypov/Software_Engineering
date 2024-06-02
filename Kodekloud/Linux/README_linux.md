@@ -58,6 +58,11 @@
 
 - [Level 3. Apache Redirects](../Linux/Linux_3/lvl_3_tsk_1.md)
 - [Level 3. Install And Configure SFTP](../Linux/Linux_3/lvl_3_tsk_2.md)
+- [Level 3. Install and Configure Tomcat Server](../Linux/Linux_3/lvl_3_tsk_3.md)
+- [Level 3. Linux Network Services](../Linux/Linux_3/lvl_3_tsk_4.md)
+- [Level 3. IPtables Installation And Configuration](../Linux/Linux_3/lvl_3_tsk_5.md)
+- [Level 3. Linux Nginx as Reverse Proxy](../Linux/Linux_3/lvl_3_tsk_6.md)
+- [Level 3. Configure protected directories in Apache](../Linux/Linux_3/lvl_3_tsk_7.md)
 <br>
 
 #### Дополнительно:
