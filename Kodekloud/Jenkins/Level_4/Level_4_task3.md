@@ -65,18 +65,19 @@ pipeline {
     }
 }
 ```
+Итоговый
 
-По первому пайплайну не проходила проверка, хотя результат правильный. Изощряемся.
 ```groovy
 pipeline {
-    agent { label 'stapp03'}
+    agent { label 'stapp02'}
 
     stages {
         stage('Build') {
             steps {
-                git branch: "master",
-                    url: "http://git.stratos.xfusioncorp.com/sarah/mr_job.git"
                 sh """
+                rm -rf /home/steve/workspace/nginx-container/mr_job
+                git clone http://git.stratos.xfusioncorp.com/sarah/mr_job.git
+                cd /home/steve/workspace/nginx-container/mr_job
                 docker build -t stregi01.stratos.xfusioncorp.com:5000/nginx:latest .
                 docker push stregi01.stratos.xfusioncorp.com:5000/nginx:latest
                 """
@@ -85,8 +86,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh """
-                docker stop nginx-app
-                docker rm nginx-app
+                docker ps -a --format '{{.Names}}' | grep -q ^nginx-app\$ && docker stop nginx-app && docker rm nginx-app
                 docker run --name nginx-app -p 8080:80 -d stregi01.stratos.xfusioncorp.com:5000/nginx:latest
                 """
             }
@@ -94,7 +94,6 @@ pipeline {
     }
 }
 ```
-
 Проверяем.
 ```bash
 thor@jump_host ~$ curl http://stapp03:8080

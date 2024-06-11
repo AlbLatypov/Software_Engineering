@@ -33,6 +33,8 @@ Enter host password for user 'javed':
 <p>The document has moved <a href="http://stapp02:8080/itadmin/">here</a>.</p>
 </body></html>
 ```
+Содержимое файл .htaccess
+
 ```bash
 AuthType Basic
 AuthName "Restricted Area"
